@@ -1,19 +1,22 @@
 
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
 
 
 .overlay {
     position: relative;
-     top: 200px;
-    left: 100px; 
-    width: 200px;
-    height: 200px;
-    background-color: white;
-/*     background-color: rgba(0, 0, 0, 0.5);
+   
+    width:600px;
+    height: 600px;
+    background-color: rgba(133, 133, 133, 0.212);
     z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: red;
+    background-image: url("../../../assets/fondo/pepinos.jpg");
+/*     background-color: rgba(0, 0, 0, 0.5);
+
+
+   
     font-size: 50px; */
 }

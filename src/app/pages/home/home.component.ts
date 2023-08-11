@@ -22,23 +22,6 @@ export class HomeComponent implements OnInit {
     ngOnInit(): void {
       this.mostrarPersonajes()
     }
-   
-/*   openOverlay(event: MouseEvent, id:number) {
-   
-   
-    this.overlayX = event.clientX ;
-    this.overlayY = event.clientY;
-    
-    this.dialogRed.open(OverlayComponent)
-    console.log('====================================');
-    console.log(id);
-    console.log('====================================');
-   
-
-
-
-
-  } */
 
     mostrarPersonajes(){
           this.apiService.getData().subscribe((data) =>{
@@ -49,9 +32,15 @@ export class HomeComponent implements OnInit {
           })
     }
 
-    showInfoModal(){
+    showInfoModal(id:number){
     
-      this.dialogRed.open(OverlayComponent)
+      this.dialogRed.open(OverlayComponent,{
+        data:{
 
+        id:id
+
+      }
+      })
+      
     }
 }

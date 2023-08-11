@@ -6,9 +6,10 @@ import { apiConstant } from '../constants/API.constants';
 @Injectable({
   providedIn: 'root'
 })
-export class ApiService {
+export class SpecificCharacterService {
 
-  private urlApi = apiConstant.BASE_URL+'character/'
+
+  private urlApi = apiConstant.BASE_URL+'character/1/'
 
   constructor(private http:HttpClient) { }
   public getData(): Observable<any>{

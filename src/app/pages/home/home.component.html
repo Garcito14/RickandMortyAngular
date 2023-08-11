@@ -1,7 +1,5 @@
 <div class="container">
-        <button (click)="showInfoModal()">
-                BOTON
-        </button>
+
         <div class="titulo">
                 <h2>
                         Rick and Morty
@@ -15,7 +13,7 @@
         <div class="gridview">
                 <div class="cardItem" *ngFor="let item of data.results">
 
-                        <div (click)="showInfoModal()"> <img class="imagen" [src]="item.image" alt=""></div>
+                        <div (click)="showInfoModal(item.id)"> <img class="imagen" [src]="item.image" alt=""></div>
 
                         <div class="cardTextos">
                                 <div class="nombres"> {{item.name}} </div>

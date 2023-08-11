@@ -1,0 +1,19 @@
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+
+.overlay {
+    position: relative;
+     top: 200px;
+    left: 100px; 
+    width: 200px;
+    height: 200px;
+    background-color: white;
+/*     background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 50px; */
+}

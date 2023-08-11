@@ -1,0 +1,36 @@
+<div>
+
+        <div class="titulo">
+                <h2>
+                        Rick and Morty
+                </h2>
+        </div>
+        <ul>
+                <li *ngFor="let item of data">
+
+                </li>
+        </ul>
+        <div class="gridview">
+                <div class="cardItem" *ngFor="let item of data.results" (click)="showInfoModal(item.id)">
+
+                        <div> <img class="imagen" [src]="item.image" alt=""></div>
+
+                        <div class="cardTextos">
+                                <div class="nombres"> {{item.name}} </div>
+                                <div> Status: {{item.status}} </div>
+                                <div> Species: {{item.species}} </div>
+                                <div> Gender: {{item.gender}} </div>
+                        </div>
+
+                </div>
+        </div>
+
+</div>
+
+
+
+<ng-container *ngIf="isClicked">
+
+        <h1>hola</h1>
+
+</ng-container>

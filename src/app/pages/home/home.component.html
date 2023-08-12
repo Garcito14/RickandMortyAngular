@@ -1,23 +1,21 @@
 <div class="container">
 
-        <div class="titulo">
+        <div class="imagentitulo">
                 <h2>
-                        Rick and Morty
+                        <div> <img  src="../../../assets/fondo/ricklogo.png" alt=""></div>
                 </h2>
         </div>
         <ul>
 
         </ul>
         <div class="gridview">
-                <div class="cardItem" *ngFor="let item of data.results">
+                <div (click)="showInfoModal(item.id)" class="cardItem" *ngFor="let item of data.results">
 
-                        <div (click)="showInfoModal(item.id)"> <img class="imagen" [src]="item.image" alt=""></div>
+                        <div > <img class="imagen" [src]="item.image" alt=""></div>
 
                         <div class="cardTextos">
                                 <div class="nombres"> {{item.name}} </div>
-                                <div> Status: {{item.status}} </div>
-                                <div> Species: {{item.species}} </div>
-                                <div> Gender: {{item.gender}} </div>
+                     
                         </div>
 
                 </div>
@@ -27,11 +25,3 @@
 
 
 
-<!-- <ng-container *ngIf="isClicked">
-
-        <div class="overlay" [style.left.px]="overlayX" [style.top.px]="overlayY">
-
-
-        </div>
-
-</ng-container> -->

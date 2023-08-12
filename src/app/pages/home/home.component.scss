@@ -1,21 +1,25 @@
 
 
-    
+    .imagentitulo{
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: center;
+    }
 
-  .titulo{
+/*   .titulo{
     display: flex;
     justify-content: center;
     font-size: 50px;
     font-weight: bold;
-  /*   color:#00A2FF; */
+  
   color: white;
     -webkit-text-stroke: 2px black;
-  }
+  } */
 
 .gridview {
 
     display: grid;
-    grid-template-columns: 500px 500px 500px;
+    grid-template-columns: 400px 400px 400px;
     justify-items: stretch;
     justify-content:space-evenly;
     gap: 55px;
@@ -43,13 +47,14 @@
 .cardItem {
 cursor: pointer;
 display: flex;
-flex-direction: row;
+flex-direction: column;
 /* background-color: #0287e09f; */
  background-color: #0287e0da; 
 border-radius: 20px;
 padding: 24px;
 color: white;
 border: 2px solid black;
+align-items: center;
 }
 
 .cardTextos {
@@ -64,29 +69,6 @@ border: 2px solid black;
     
     }
     
-.modal {
-    height: 500px;
-    width: 500px;
-    border: 2px solid ;
-    position: absolute;
-  background-color: white
-   
-;
-}
 
 
 
-.overlay {
-    position: absolute;
-    top: 100;
-    left: 100;
-    width: 500px;
-    height: 500px;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 50px;
-}

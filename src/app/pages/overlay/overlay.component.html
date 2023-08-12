@@ -1,24 +1,12 @@
 <div class="overlay">
-
-    <h2>HOLA: {{id}}</h2>
-
     <div>
-        asdasdawd
+
         <ul>
-            <li *ngFor="let item of data">
-                <div> <img [src]="item.image" alt=""></div>
-                <div>
-                    <div> {{item.name}} </div>
-                    <div> Status: {{item.status}} </div>
-                    <div> Species: {{item.species}} </div>
-                    <div> Gender: {{item.gender}} </div>
-                </div>
-            </li>
+            <div> <img class="imagen" [src]="data.image" alt=""></div>
+            <div class="nombres">{{data.name}}</div>
+
         </ul>
         <div>
-
-
-
         </div>
     </div>
 

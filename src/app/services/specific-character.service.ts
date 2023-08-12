@@ -9,10 +9,10 @@ import { apiConstant } from '../constants/API.constants';
 export class SpecificCharacterService {
 
 
-  private urlApi = apiConstant.BASE_URL+'character/1/'
+  private urlApi = apiConstant.BASE_URL+'character/'
 
   constructor(private http:HttpClient) { }
-  public getData(): Observable<any>{
-    return this.http.get<any>(this.urlApi)
+  public getCharacter(íd:number): Observable<any>{
+    return this.http.get<any>(this.urlApi+íd)
   }
 }

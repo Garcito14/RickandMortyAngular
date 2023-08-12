@@ -10,15 +10,8 @@ import { OverlayComponent } from '../overlay/overlay.component';
 })
 export class HomeComponent implements OnInit {
   
-  overlayX: number = 0;
-  overlayY: number = 0;
-  isClicked = false
   data: any= {}
-
   constructor(private apiService:ApiService,private dialogRed: MatDialog){}
-
-
-
     ngOnInit(): void {
       this.mostrarPersonajes()
     }
@@ -26,19 +19,14 @@ export class HomeComponent implements OnInit {
     mostrarPersonajes(){
           this.apiService.getData().subscribe((data) =>{
             this.data = data;
-         
             console.log(this.data);
-       
           })
     }
 
     showInfoModal(id:number){
-    
       this.dialogRed.open(OverlayComponent,{
         data:{
-
         id:id
-
       }
       })
       

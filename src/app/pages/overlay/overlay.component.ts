@@ -9,8 +9,9 @@ import { SpecificCharacterService } from 'src/app/services/specific-character.se
   styleUrls: ['./overlay.component.scss']
 })
 export class OverlayComponent implements OnInit {
+  
   id;
-  constructor( @Inject(MAT_DIALOG_DATA)public data:any,private specificApi:SpecificCharacterService){
+  constructor( @Inject(MAT_DIALOG_DATA)public data:any, private specificApi:SpecificCharacterService){
       this.id = data.id
   }
   ngOnInit(): void {
@@ -18,9 +19,8 @@ export class OverlayComponent implements OnInit {
   }
 
   mostrarPersonaje(){
-    this.specificApi.getData().subscribe((data) =>{
+    this.specificApi.getCharacter(this.id).subscribe((data) =>{
       this.data = data;
-   
       console.log(this.data);
  
     })

@@ -1,29 +1,36 @@
 <div class="overlay">
     <div>
 
-        <ul>
+     
             <div class="divimagen"> <img class="imagen" [src]="data.image" alt=""></div>
             <div>
             <div class="nombres"> {{data.name}}</div>
-        <div class="">
-            <div class="datospersonales">
-            <div > {{data.gender}}</div>
-            <div >  {{data.species}} </div>
-            <div >  {{data.status}} </div>
-            <div class="locations">
-                <div > {{data.location}}</div>
-                <div >  {{data.species}} </div>
-                <div >  {{data.status}} </div>
-            </div>
-        </div>
-        </div>
-
-    
-            <div class="nombres">{{data.location.name}}</div>
-        </div>
-        </ul>
+            <div class="datosgrupo">
         <div>
+            <div class="datospersonales">
+            <div  class="rows" > <div class="titulos">GENDER: </div> {{data.gender}}</div>
+            <div  class="rows">   <div class="titulos">SPECIES: </div>{{data.species}} </div>
+            <div  class="rows">  <div class="titulos">STATUS: </div>  {{data.status}} </div>
         </div>
+        
+        </div>
+      
+     
+        <div class="datospersonales "  >
+     
+        <div  class="rows" > <div class="titulos">TYPE:</div>{{data.type}} </div>
+        <div class="rows">  <div class="titulos">ORIGIN: </div>  {{data.origin.name}} </div>
     </div>
+      
+
+    </div>
+
+
+    <footer class="footers">
+       <!--  <div *ngFor="let item of data.episode"> -->
+
+        <div class="">{{data.created}}</div>
+<!--     </div> -->
+    </footer>   
 
 </div>

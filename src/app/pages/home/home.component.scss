@@ -1,4 +1,8 @@
-
+.container{
+  
+  
+ 
+}
 
     .imagentitulo{
       margin-bottom: 10px;
@@ -19,7 +23,7 @@
 .gridview {
 
     display: grid;
-    grid-template-columns: 400px 400px 400px;
+    grid-template-columns: 250px 250px 250px;
     justify-items: stretch;
     justify-content:space-evenly;
     gap: 55px;
@@ -49,7 +53,9 @@ cursor: pointer;
 display: flex;
 flex-direction: column;
 /* background-color: #0287e09f; */
- background-color: #0287e0da; 
+
+
+background: linear-gradient(#0287e0, #5f0057);
 border-radius: 20px;
 padding: 24px;
 color: white;
@@ -61,7 +67,7 @@ align-items: center;
     display: flex;
     flex-direction: column;
     margin-top: 10px;
-    margin-left: 30px;
+   
     justify-content: space-evenly;
     align-items: stretch;
     font-size: 25px;
@@ -69,6 +75,6 @@ align-items: center;
     
     }
     
-
+ 
 
 

@@ -2,7 +2,7 @@
 
 
 .nombres{
-    font-size: 20px;
+    font-size: 30px;
     margin-bottom: 30px;
     font-weight: bold;
     color: white;
@@ -13,10 +13,13 @@
 .datosgrupo{
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-around;
+
+    align-items: center;
+    align-content: stretch;
    
 }
 .datospersonales{
@@ -28,6 +31,7 @@
 
 
 .divimagen{
+  
     padding: 15px;
     display: flex;
     justify-content: center;
@@ -39,9 +43,10 @@
     position: relative;
     border: 2px solid black;
     width:550px;
-    height: 550px;
+    height: 600px;
     resize:none;
-    z-index: 1;
+
+    z-index: 1; 
     justify-content: center;
     align-items: stretch;
     background-image: url("../../../assets/fondo/fondo2.png");
@@ -51,15 +56,37 @@
     height:250px;
     width:250px;
     border-radius: 100%;
+    border: 4px solid rgb(212, 0, 184);
   
     
 }
 
-.titulos{
+.gender{
     font-weight:200;
     color: white;
     margin-right: 10px;
-    font-size: 16px;
+    font-size: 18px;
+
+}
+.specie{
+    font-weight:200;
+    color: white;
+    margin-right: 16px;
+    font-size: px;
+
+}
+.alive{
+    font-weight:200;
+    color: white;
+    margin-right: 15px;
+    font-size: px;
+
+}
+.origin{
+    font-weight:200;
+    color: white;
+    margin-right: 14px;
+    font-size: px;
 
 }
 .rows{

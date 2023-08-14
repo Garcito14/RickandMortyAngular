@@ -59,6 +59,6 @@ export class HomeComponent implements OnInit {
       reiniciarPersonajes(){
         this.mostrarPersonajes()
         this.ngSelectComponent.handleClearClick();
-        console.log("hola");
+       
       }
 }

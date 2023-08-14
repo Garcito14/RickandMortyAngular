@@ -1,21 +1,30 @@
 <div class="container">
-
+                <div><mat-icon>badge</mat-icon></div>
         <div class="imagentitulo">
                 <h2>
                         <div> <img  src="../../../assets/fondo/ricklogo.png" alt=""></div>
+                   
                 </h2>
         </div>
+        <label for="Select Location"></label>
+        <select name="form-control" >
+                                <option value="">select</option>
+                                <option *ngFor="let item of location.results" [value]="item.id">{{item.name}}</option>
+
+
+        </select>
         <ul>
 
         </ul>
         <div class="gridview">
                 <div (click)="showInfoModal(item.id)" class="cardItem" *ngFor="let item of data.results">
-
+                        
                         <div > <img class="imagen" [src]="item.image" alt=""></div>
 
-                        <div class="cardTextos">
+                        <div class="cardTextos">        
                                 <div class="nombres"> {{item.name}} </div>
-                     
+                                <div class="location" style="visibility:hidden;"> {{item.location.name}}  </div>
+                      
                         </div>
 
                 </div>

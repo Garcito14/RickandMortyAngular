@@ -6,31 +6,33 @@
             <div>
             <div class="nombres"> {{data.name}}</div>
             <div class="datosgrupo">
-        <div>
-            <div class="datospersonales">
-            <div   > <div class="genedr"> {{data.gender}}  </div></div>
-            <div   >   <div class="specie">{{data.species}}</div> </div>
-            <div   >  <div class="alive"> {{data.status}}</div>  </div>
-            <div   > <div class="titulos">{{data.type}}</div> </div>
-            <div    >  <div class="titulos"> {{data.origin.name}} </div>  </div>
-        </div>
+       
         
-        </div>
-      
-     
-        <div class="datospersonales "  >
-     
+                <div class="rows"> <mat-icon> person</mat-icon> 
+                    <div class="gender"> {{data.gender}} 
+                         </div>
+                         <mat-icon> person</mat-icon>   
+                        </div> 
+                <div class="rows"> <mat-icon> groups</mat-icon>
+                     <div class="specie">{{data.species}}
+                     </div> 
+                    </div> 
+                <div class="rows"> <mat-icon> favorite</mat-icon>
+                     <div class="alive"> {{data.status}}
+                     </div> 
+                    </div>  
 
+    
+                
     </div>
-      
-
-    </div>
-
+   
+    <div class="type-origin">  <div> {{data.origin.name}} </div> </div> 
+    <div class="type-origin">{{data.type}}</div> 
 
     <footer class="footers">
        <!--  <div *ngFor="let item of data.episode"> -->
 
-        <div class="">{{data.created}}</div>
+        <div class="type-origin">{{data.created}}</div>
 <!--     </div> -->
     </footer>   
 

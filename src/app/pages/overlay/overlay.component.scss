@@ -73,6 +73,16 @@
     align-items: center;
 }
 
+.created{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    color: azure;
+    margin-right: 5px;
+    align-items: center;
+}
 .gender{
     margin-left: 10px;
     font-weight:200;

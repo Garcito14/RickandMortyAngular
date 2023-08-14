@@ -12,6 +12,8 @@ import { SpecificCharacterService } from 'src/app/services/specific-character.se
 export class OverlayComponent implements OnInit {
   episodes: any= {}
   id;
+  startIndex: number = 0;
+  endIndex: number = 10;
   constructor( @Inject(MAT_DIALOG_DATA)public data:any, private specificApi:SpecificCharacterService,private episodesApi:EpisodesService){
       this.id = data.id
   }
@@ -34,5 +36,10 @@ mostrarEpisodios(){
     console.log(this.episodes);
 
   })
+}
+
+cortarFecha(fecha:string)
+{
+  return fecha.substring(this.startIndex, this.endIndex);
 }
 }

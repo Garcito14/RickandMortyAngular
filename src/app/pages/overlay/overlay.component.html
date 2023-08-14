@@ -40,8 +40,10 @@
 
     <footer class="footers">
        <!--  <div *ngFor="let item of data.episode"> -->
-
-        <div class="type-origin">{{data.created}}</div>
+        <div class="rows created"> 
+            <div class="created">Created: </div>
+        <div style="color: white; ">{{cortarFecha(data.created)}}</div>
+        </div>
 <!--     </div> -->
     </footer>   
 

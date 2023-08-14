@@ -8,26 +8,34 @@
             <div class="datosgrupo">
        
         
-                <div class="rows"> <mat-icon> male</mat-icon> 
-                    <div class="gender"> {{data.gender}} 
+                <div class="rows"> 
+                    <div  *ngIf="data.gender==='Male'"class="gender"> <mat-icon> male</mat-icon> 
+                         {{data.gender}}  </div> 
+                         <div  *ngIf="data.gender==='Female'"class="gender"> <mat-icon> female</mat-icon> 
+                            {{data.gender}} 
                          </div>
-                         <mat-icon> female</mat-icon>   
-                        </div> 
-                <div class="rows"> <mat-icon> groups</mat-icon>
-                     <div class="specie">{{data.species}}
-                     </div> 
+                   </div>
+                       
+                <div class="rows"> 
+                    <div  *ngIf="data.status==='Alive'"class="alive"> <mat-icon>favorite</mat-icon> 
+                        {{data.status}}  </div> 
+                        <div  *ngIf="data.status==='Dead'"class="alive"> <mat-icon> heart_broken</mat-icon> 
+                           {{data.status}} 
+                        </div>
                     </div> 
-                <div class="rows"> <mat-icon> favorite</mat-icon>
-                     <div class="alive"> {{data.status}}
-                     </div> 
-                     <mat-icon> favorite</mat-icon>
-                    </div>  
-
+                    <div class="rows"> 
+                        <div  *ngIf="data.species==='Human'"class="specie"> <mat-icon>person</mat-icon> 
+                            {{data.species}}  </div> 
+                            <div  *ngIf="data.species==='Alien'"class="specie"> <mat-icon> rocket</mat-icon> 
+                               {{data.species}} 
+                            </div>
+                        </div> 
     
                 
     </div>
 
-    <div class="type-origin"> <div class="publicicon"><mat-icon> public</mat-icon> </div> {{data.origin.name}}  </div> 
+    <div class="type-origin"> <div class="publicicon"><mat-icon> public</mat-icon> </div> {{data.origin.name}} <div class="publicicon"><mat-icon> public</mat-icon></div>   </div>
+   
     <div class="type-origin">{{data.type}}</div> 
 
     <footer class="footers">

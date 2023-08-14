@@ -2,19 +2,20 @@
                
         <div class="imagentitulo">
                 <h2>
-                        <div> <img  src="../../../assets/fondo/ricklogo.png" alt=""></div>
-                 
+                 <div> <img  src="../../../assets/fondo/ricklogo.png" alt=""></div>
                 </h2>
+        </div >
+
+        <div class="rows">
+        <div >
+                <button class="btncleaner" (click)="reiniciarPersonajes()">
+                <mat-icon> restart_alt</mat-icon>
+                </button>
         </div>
-        <label for="Select Location"></label>
-        <select name="form-control" >
-                                <option value="">select</option>
-                                <option *ngFor="let item of location.results" [value]="item.id ">{{item.name}}</option>
-        </select>
-        <div style="background-color: red;">    
+
+          <div  class="divselect">    
                 <ng-select
-               
-                appendTo="body"
+                
                 bindLabel="name"
                 bindValue="id"
                 [items]="location.results"
@@ -22,8 +23,9 @@
                 width = "100%"
                 >
                         
-                </ng-select></div>
-    
+                </ng-select>
+          </div>
+        </div>
         <ul>
 
         </ul>

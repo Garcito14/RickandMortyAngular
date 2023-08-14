@@ -11,7 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { OverlayComponent } from './pages/overlay/overlay.component';
-import { PipesModule } from './pipes/pipes.module';
+
 
 
 @NgModule({
@@ -26,7 +26,7 @@ import { PipesModule } from './pipes/pipes.module';
     HttpClientModule,
     MatDialogModule,
     MatIconModule,
-    PipesModule,
+
     MatFormFieldModule,
     NgSelectModule
    

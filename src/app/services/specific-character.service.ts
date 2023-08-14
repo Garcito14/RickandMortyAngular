@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { apiConstant } from '../constants/API.constants';
+
 
 @Injectable({
   providedIn: 'root'
@@ -9,7 +9,7 @@ import { apiConstant } from '../constants/API.constants';
 export class SpecificCharacterService {
 
 
-  private urlApi = apiConstant.BASE_URL+'character/'
+  private urlApi = 'https://rickandmortyapi.com/api/character/'
 
   constructor(private http:HttpClient) { }
   public getCharacter(íd:number): Observable<any>{

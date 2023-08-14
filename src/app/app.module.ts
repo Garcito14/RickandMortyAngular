@@ -3,10 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import {MatDialogModule} from '@angular/material/dialog';
 import  {MatIconModule} from '@angular/material/icon';
+import { NgSelectModule } from '@ng-select/ng-select';
 
 
-
-
+import {MatFormFieldModule} from '@angular/material/form-field';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -26,7 +26,9 @@ import { PipesModule } from './pipes/pipes.module';
     HttpClientModule,
     MatDialogModule,
     MatIconModule,
-    PipesModule
+    PipesModule,
+    MatFormFieldModule,
+    NgSelectModule
    
  
   

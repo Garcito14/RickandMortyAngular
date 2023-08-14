@@ -1,23 +1,34 @@
 <div class="container">
-                <div><mat-icon>badge</mat-icon></div>
+               
         <div class="imagentitulo">
                 <h2>
                         <div> <img  src="../../../assets/fondo/ricklogo.png" alt=""></div>
-                   
+                 
                 </h2>
         </div>
         <label for="Select Location"></label>
         <select name="form-control" >
                                 <option value="">select</option>
-                                <option *ngFor="let item of location.results" [value]="item.id">{{item.name}}</option>
-
-
+                                <option *ngFor="let item of location.results" [value]="item.id ">{{item.name}}</option>
         </select>
+        <div style="background-color: red;">    
+                <ng-select
+               
+                appendTo="body"
+                bindLabel="name"
+                bindValue="id"
+                [items]="location.results"
+                (change)="filtrarLugares($event)"
+                width = "100%"
+                >
+                        
+                </ng-select></div>
+    
         <ul>
 
         </ul>
         <div class="gridview">
-                <div (click)="showInfoModal(item.id)" class="cardItem" *ngFor="let item of data.results">
+                <div (click)="showInfoModal(item.id)" class="cardItem" *ngFor="let item of data.results  ">
                         
                         <div > <img class="imagen" [src]="item.image" alt=""></div>
 

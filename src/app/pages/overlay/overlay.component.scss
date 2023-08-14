@@ -65,10 +65,10 @@
 
 .type-origin{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: space-around;
+    justify-content: center;
     color: azure;
     align-items: center;
 }
@@ -113,6 +113,10 @@
     flex-direction: row;
     color: rgba(47, 189, 255, 0.445)  ;
     
+  }
+  .publicicon{
+    margin-top: 5px;
+    margin-right: 12px;
   }
 
   .footers

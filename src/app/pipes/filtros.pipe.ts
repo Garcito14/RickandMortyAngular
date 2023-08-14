@@ -5,9 +5,18 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class FiltrosPipe implements PipeTransform {
 
-  transform(location: any[], texto: string): any[] {
-   console.log(location);
-   return location
+  transform(location: any[], texto: string): any {
+    console.log("pipepipe");
+    texto = texto.toLowerCase()
+   console.log( 'pipe'+ location);
+   if(texto === ''){
+    return location 
+   }
+ return location.filter(item =>{
+  return item.location.name.toLowerCase()
+      .includes(texto);
+ })
+  
   }
 
 }
